@@ -1,0 +1,87 @@
+<head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+</style>
+
+</head>
+<body>
+    <!-- container div -->
+    <div style="position: relative; display:inline-block">
+        <!-- smaller container for healthbars -->
+        <div style="
+        position:absolute;
+        display: flex; 
+        width: 100%; 
+        align-items: center; 
+        padding: 20px;">
+
+
+        <!-- player health -->
+        <div style="
+        position: relative; 
+        width: 100%; 
+        justify-content: flex-end;
+        border: 2px solid snow;">
+
+        <div style="background-color: #EF4444; height: 30px;width: 100%;"></div>
+        <div id="playerhealth" style="
+        position: absolute;
+        background-color: #818CF8; 
+        top: 0;
+        right: 0;
+        bottom: 0; 
+        width: 100%;"></div>
+        </div>
+
+        <!-- timer -->
+        <div 
+        id = 'timer'
+        style="
+        background-color: #A21CAF; 
+        height: 50px; 
+        width: 100px; 
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid snow;">90</div>
+
+        <!-- enemy health -->
+        <div style="position: relative;  
+        width: 100%;
+        border: 2px solid snow;">
+        <div  style="
+        background-color: #EF4444; 
+        height: 30px"></div>
+        <div id="enemyhealth" 
+        style="
+        position: absolute;
+        background-color: #818CF8; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;"></div>
+        </div>
+        </div>
+
+        <div id="displaywinner"
+        style="
+        position: absolute; 
+        color: aliceblue; 
+        align-items: center; 
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-weight: bold;
+        display: none;">Tie</div>
+        <canvas></canvas>
+    </div>
+
+<script src="js/utils.js"></script>
+<script src="js/classes.js"></script>
+<script src="index.js"></script>
+</body>
